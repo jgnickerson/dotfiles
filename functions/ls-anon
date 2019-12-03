@@ -1,0 +1,1 @@
+gsutil ls -l gs://com-liveramp-eu-anonymized-output/$1
