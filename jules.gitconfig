@@ -1,0 +1,14 @@
+[user]
+	name = Jules Nickerson
+	email = jules.nickerson@liveramp.com
+[alias]
+	co = checkout
+	pr = pull --rebase
+[push]
+	default = simple
+[hub]
+	host = git.liveramp.net
+[core]
+	excludesfile = ~/.gitignore
+[pager]
+	branch = false
