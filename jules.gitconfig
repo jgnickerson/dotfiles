@@ -4,6 +4,8 @@
 [alias]
 	co = checkout
 	pr = pull --rebase
+	cm = commit -m
+	ca = commit --amend
 [push]
 	default = simple
 [hub]
