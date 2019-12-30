@@ -7,6 +7,4 @@ alias bast="gcloud compute --project \"international-gramercy\" ssh --zone \"eur
 
 alias dbgw="ssh -i ~/.ssh/tf_eu ec2-user@34.250.75.8"
 
-alias glog="git --no-pager log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
-
 alias gs='git status'
