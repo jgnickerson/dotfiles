@@ -6,6 +6,7 @@
 	pr = pull --rebase
 	cm = commit -m
 	ca = commit --amend
+	col = checkout @{-1}
 [push]
 	default = simple
 [hub]
