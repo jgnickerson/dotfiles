@@ -1,4 +1,8 @@
 #compdef ke
 
-kubectl exec -it $1 /bin/sh
+if [[ -z "$2" ]]; then
+  kubectl exec -it $1 /bin/sh
+else
+  kubectl exec -it $1 /bin/sh -c $2
+fi
 
