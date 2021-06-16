@@ -1,6 +1,6 @@
 [user]
-	name = Jules Nickerson
-	email = jules.nickerson@liveramp.com
+	name = jgnickerson
+	email = jgnickerson@me.com
 [alias]
 	co = checkout
 	pr = pull --rebase
