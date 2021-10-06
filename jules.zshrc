@@ -8,7 +8,7 @@ autoload ${fpath[1]}/*(:t)
 
 plugins=(zsh-autosuggestions git docker extract kubectl jsontools mvn sudo web-search z history-substring-search)
 
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
