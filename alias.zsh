@@ -2,6 +2,12 @@
 # ln -sv /path/to/this/file
 
 alias gs='git status'
+alias gdb='del-branches'
+alias dka='docker-kill-all'
+alias mpd='main-pull-del'
+alias gaf='git-add-files'
 
 alias di='docker images'
 alias dih='docker images | head'
+alias kx='kubectx'
+alias kn='kubens'

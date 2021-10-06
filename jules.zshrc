@@ -1,5 +1,5 @@
 source ~/.iterm2_shell_integration.zsh
-export PATH="/usr/local/go/bin:/Users/jnicke/.local/bin:$PATH"
+export PATH="/usr/local/go/bin:/Users/jnicke/.local/bin:$(go env GOPATH)/bin:$PATH"
 
 fpath=(~/personal/dotfiles/functions  $fpath)
 
