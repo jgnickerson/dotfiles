@@ -17,3 +17,6 @@
 [pager]
 	branch = false
 	log = true
+# https://medium.com/easyread/today-i-learned-fix-go-get-private-repository-return-error-terminal-prompts-disabled-8c5549d89045
+[url "git@github.com:"]
+	insteadOf = https://github.com
