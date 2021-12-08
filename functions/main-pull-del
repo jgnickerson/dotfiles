@@ -1,3 +1,14 @@
-git checkout main
+# Exit on any failure
+# set -e
+
+git checkout main 
+if [ $? -ne 0 ]; then
+    git checkout master
+    if [ $? -ne 0 ]; then
+        echo "repo doesn't use main/master"
+        exit 1
+    fi
+fi
+
 git pull --rebase
 git branch -d @{-1}
