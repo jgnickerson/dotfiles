@@ -1,0 +1,2 @@
+git status -s | fzf -m | awk '{ print $2 }' | xargs git add
+git status -s
