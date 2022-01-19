@@ -1,3 +1,0 @@
-#compdef detko
-
-kubectl exec $1 bash -- -c "su root ./detente-kickoff.sh $2 &> $2.log &"

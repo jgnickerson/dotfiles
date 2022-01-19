@@ -1,3 +1,0 @@
-SECRET=$1
-FIELD=$2
-kubectl get secret $SECRET -o jsonpath="{.data.$FIELD}" | base64 -D
