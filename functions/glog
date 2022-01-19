@@ -1,0 +1,8 @@
+NUM="-10"
+if [ -z "$1" ]
+then
+  NUM="-$1"
+fi
+
+echo "git --no-pager log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short $NUM"
+

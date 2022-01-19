@@ -1,0 +1,1 @@
+gsutil cp gs://com-liveramp-eu-anonymized-output/$1 $2

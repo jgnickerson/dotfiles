@@ -1,0 +1,2 @@
+#compdef rsync-prb
+rsync -e 'ssh -c 3des-cbc -i ~/.ssh/tf_eu' $1 ec2-user@34.250.215.117:~
