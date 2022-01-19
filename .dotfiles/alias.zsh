@@ -1,7 +1,7 @@
 # cd ~/.oh-my-zsh/custom
 # ln -sv /path/to/this/file
 
-alias dotfiles="git --git-dir=$HOME/.dotfiles-git --work-tree=$HOME"
+alias dots="git --git-dir=$HOME/.dotfiles-git --work-tree=$HOME"
 
 alias gs='git status'
 alias gdb='del-branches'
