@@ -1,4 +1,5 @@
 # This is config that overwrites oh-my-zsh defaults
+eval "$(starship init zsh)"
 
 # Additional context found here: https://www.soberkoder.com/better-zsh-history/
 # Most of this done by oh-my-zsh already
