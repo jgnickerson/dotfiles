@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 NUM="-10"
 if [ -z "$1" ]
 then

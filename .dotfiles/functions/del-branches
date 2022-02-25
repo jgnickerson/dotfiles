@@ -1,1 +1,3 @@
+#!/bin/zsh
+
 git branch | grep -v "*\|main\|master" | fzf -m | xargs git branch -d

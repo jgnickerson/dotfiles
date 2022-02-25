@@ -1,1 +1,0 @@
-gsutil ls -l $1://com-liveramp-eu-customer-uploads/$2

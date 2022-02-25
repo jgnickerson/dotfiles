@@ -1,14 +1,25 @@
+#!/bin/zsh
+
 # Exit on any failure
 # set -e
 
-git checkout main 
+current=$(git branch --show-current)
+if [[ "$current" == "main" ]] || [[ "$current" == "master" ]]; then
+    echo "on branch $current already. Exiting..."
+    return 0
+fi
+
+git checkout main
 if [ $? -ne 0 ]; then
     git checkout master
     if [ $? -ne 0 ]; then
         echo "repo doesn't use main/master"
-        exit 1
+        return 1
     fi
 fi
 
 git pull --rebase
-git branch -d @{-1}
+read "response?Are you sure you want to delete '$current'? [y/N]"
+if [[ "$response" =~ [yY]$ ]]; then
+    git branch -D "$current"
+fi

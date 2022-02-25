@@ -1,2 +1,4 @@
-git status -s | fzf -m | awk '{ print $2 }' | xargs git add
+#!/bin/zsh
+
+git-status-fzf git add
 git status -s
