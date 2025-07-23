@@ -11,6 +11,9 @@ alias kx='kubectx'
 alias kn='kubens'
 alias p='pulumi'
 
+alias co='git branch --sort=-committerdate | fzf | xargs git checkout'
+alias secrets='gcloud secrets list | fzf | cut -f 1 -d " " | xargs gcloud secrets versions access latest --project sigma-freedom-316222 --secret'
+
 # Zsh Funcs
 alias funcs='ls ~/.dotfiles/functions'
 alias gdb='del-branches'
