@@ -1,0 +1,5 @@
+PGPASSWORD=pass123 psql -h localhost -p 5432 -U postgres -d fermat \
+    -c 'DROP SCHEMA public CASCADE; CREATE SCHEMA public;'
+
+gsutil cat gs://fermat-sql-dumps-0a7f0ca/fermat-1649678452.gz | gunzip \
+    | PGPASSWORD=pass123 psql -h localhost -p 5432 -U postgres -d fermat

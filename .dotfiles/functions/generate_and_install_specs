@@ -1,0 +1,12 @@
+api=$1
+if [[ "$api" != "storefront-api" && "$api" != "config-api" ]]; then
+    echo "First arg must be 'storefront-api' or 'config-api'"
+    exit 1
+fi
+
+make generate api="$1"
+cd "specs/$1/generated/java"
+mvn install
+cd ../spring
+mvn install
+z api-specs

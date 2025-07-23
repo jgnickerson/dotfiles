@@ -1,0 +1,50 @@
+#!/bin/zsh
+
+# Don't exit terminal session on errors
+set +e
+
+# Check if a target branch is provided
+if [ $# -ne 1 ]; then
+echo "Usage: git-rebase-helper <target-branch>"
+return 1
+fi
+
+TARGET_BRANCH="$1"
+
+# Check if target branch exists
+if ! git rev-parse --verify "$TARGET_BRANCH" &> /dev/null; then
+echo "Error: Target branch '$TARGET_BRANCH' does not exist"
+return 1
+fi
+
+# Check if fzf is installed
+if ! command -v fzf &> /dev/null; then
+echo "Error: fzf is not installed. Please install it first."
+return 1
+fi
+
+# Get the last 20 commits with details
+selected_commit=$(git log -n 20 --pretty=format:"%h | %ad | %an | %s" --date=short | 
+                fzf --height 40% --reverse --header="Select a commit to rebase onto $TARGET_BRANCH (ESC to cancel)")
+
+# Exit if no commit was selected
+if [ -z "$selected_commit" ]; then
+echo "No commit selected. Operation cancelled."
+return 0
+fi
+
+# Extract the commit hash from the selected line
+commit_hash=$(echo "$selected_commit" | cut -d'|' -f1 | xargs)
+
+# Perform the rebase
+echo "Executing: git rebase --onto $TARGET_BRANCH $commit_hash"
+git rebase --onto "$TARGET_BRANCH" "$commit_hash"
+
+exit_code=$?
+if [ $exit_code -eq 0 ]; then
+echo "Rebase completed successfully."
+else
+echo "Rebase encountered issues. Exit code: $exit_code"
+fi
+
+return $exit_code

@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+if [[ -z "$2" ]]; then
+  kubectl exec -it $(kubectl get pods | tr -s ' ' | cut -d ' ' -f 1 | grep $1) -- /bin/sh
+else
+  kubectl exec -it $(kubectl get pods | tr -s ' ' | cut -d ' ' -f 1 | grep $1) -c $2 -- /bin/sh 
+fi
+

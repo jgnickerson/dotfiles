@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+git commit --amend
+read ""
+git push --force

@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+if [[ "$1" == '-p' ]]; then
+    shift 1
+    git status -s | fzf -m | awk '{ print $2 }' | parallel -p $@
+else
+    git status -s | fzf -m | awk '{ print $2 }' | parallel $@
+fi

@@ -1,0 +1,6 @@
+cd ~/code/fermat/java
+sh ./gradlew clean
+sh ./fermat-db/bin/cleanupLocalDb.sh
+sh ./fermat-db/bin/migrateFlyway.sh local
+sh ./fermat-db/bin/generateJooq.sh
+cd -
