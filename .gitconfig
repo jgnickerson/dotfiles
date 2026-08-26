@@ -1,6 +1,6 @@
 [user]
-	name = jgnickerson
-	email = jgnickerson@me.com
+	name = Jules Nickerson
+	email = jules.nickerson@fractional.ai
 [alias]
 	co = checkout
 	pr = pull --rebase
@@ -11,8 +11,6 @@
 [push]
 	#https://stackoverflow.com/a/27185855
 	default = current
-[hub]
-	host = git.liveramp.net
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = input

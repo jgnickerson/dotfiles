@@ -3,8 +3,10 @@
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-source ~/.iterm2_shell_integration.zsh
 export PATH="/usr/local/go/bin:$HOME/.local/bin:$(go env GOPATH)/bin:$PATH"
+
+# VS Code `code` CLI
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 fpath=(~/.dotfiles/functions  $fpath)
 
@@ -19,9 +21,6 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jules/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jules/google-cloud-sdk/completion.zsh.inc'; fi
-
-# Add Fermat CLI to PATH
-export PATH="$PATH:/Users/jules/code/fermat/go/fermat-cli/bin"
 
 eval "$(starship init zsh)"
 
