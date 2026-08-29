@@ -9,7 +9,8 @@ brew install kubectx \
     starship \
     font-jetbrains-mono-nerd-font \
     helm \
-    bat
+    bat \
+    go
 
 # Install nvm + Node 26
 export NVM_DIR="$HOME/.nvm"

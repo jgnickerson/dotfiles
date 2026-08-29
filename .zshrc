@@ -79,7 +79,6 @@ source ~/.dotfiles/jules.zshrc
 source $ZSH/oh-my-zsh.sh
 
 source ~/.dotfiles/post-omz.zshrc
-source ~/.dotfiles/java.zshrc
 source ~/.dotfiles/alias.zsh
 
 
