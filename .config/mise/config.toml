@@ -3,3 +3,12 @@ go = "1"
 node = "26"
 "npm:ts-node" = "latest"
 "npm:typescript" = "latest"
+
+[bootstrap.packages]
+"brew:tree" = "latest"
+"brew:kubectx" = "latest"
+"brew:fzf" = "latest"
+"brew:starship" = "latest"
+"brew:helm" = "latest"
+"brew:bat" = "latest"
+"brew-cask:font-jetbrains-mono-nerd-font" = "latest"

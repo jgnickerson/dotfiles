@@ -4,13 +4,4 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 brew install mise
 
-brew tap homebrew/cask-fonts
-brew install kubectx \
-    fzf \
-    tree \
-    starship \
-    font-jetbrains-mono-nerd-font \
-    helm \
-    bat 
-
-mise install
+mise bootstrap
