@@ -3,6 +3,7 @@ go = "1"
 node = "26"
 "npm:ts-node" = "latest"
 "npm:typescript" = "latest"
+python = "3.14"
 
 [bootstrap.packages]
 "brew:tree" = "latest"
