@@ -81,6 +81,9 @@ source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/post-omz.zshrc
 source ~/.dotfiles/alias.zsh
 
+# Make sure mise tools are available in path
+eval "$(mise activate zsh)"
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

@@ -23,6 +23,3 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 if [ -f '/Users/jules/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jules/google-cloud-sdk/completion.zsh.inc'; fi
 
 eval "$(starship init zsh)"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
