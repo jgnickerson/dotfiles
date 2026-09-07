@@ -1,9 +1,13 @@
 # Mostly followed instructions here:
 # https://mjones44.medium.com/storing-dotfiles-in-a-git-repository-53f765c0005d
 
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-export PATH="/usr/local/go/bin:$HOME/.local/bin:$(go env GOPATH)/bin:$PATH"
+# Make sure mise tools are available in path
+eval "$(mise activate zsh)"
+
+export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
 
 # VS Code `code` CLI
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"

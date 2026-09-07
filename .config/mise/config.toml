@@ -1,3 +1,5 @@
 [tools]
 go = "1"
 node = "26"
+"npm:ts-node" = "latest"
+"npm:typescript" = "latest"

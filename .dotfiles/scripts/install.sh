@@ -11,8 +11,6 @@ brew install kubectx \
     starship \
     font-jetbrains-mono-nerd-font \
     helm \
-    bat \
-    go
+    bat 
 
 mise install
-mise exec -- npm install -g yarn typescript ts-node git-open

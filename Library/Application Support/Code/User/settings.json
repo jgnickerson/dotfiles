@@ -1,3 +1,5 @@
 {
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "IntelliJ IDEA New UI Dark",
+    "claudeCode.preferredLocation": "panel"
 }
