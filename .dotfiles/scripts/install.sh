@@ -5,3 +5,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 brew install mise
 
 mise bootstrap
+
+
+# After installing Bear, to get CLI access
+# sudo ln -s /Applications/Bear.app/Contents/MacOS/bearcli /usr/local/bin/bear
