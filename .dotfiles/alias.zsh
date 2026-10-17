@@ -24,3 +24,6 @@ alias cop='checkout-pop'
 alias sco='stash-checkout'
 alias ke='kube-exec'
 
+
+# Claude Code without the API key (use subscription login instead)
+alias claudesub='env -u ANTHROPIC_API_KEY claude'

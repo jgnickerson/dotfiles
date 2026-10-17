@@ -81,6 +81,10 @@ source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/post-omz.zshrc
 source ~/.dotfiles/alias.zsh
 
+if [ -f "$HOME/.secrets" ]; then
+    source ~/.secrets
+fi
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
